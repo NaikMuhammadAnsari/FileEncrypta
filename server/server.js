@@ -33,12 +33,4 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
-const cors = require('cors');
-
-// Enable CORS for all origins (or specify your Netlify URL)
-app.use(cors());
-
-app.get('/', (req, res) => {
-  res.send('FileEncrypta backend is running on Vercel!');
-});
 module.exports = app;
